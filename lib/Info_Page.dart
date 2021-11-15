@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class InfoPage extends StatelessWidget {
+class Info_Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
           title: const Text('About Me',
               style: TextStyle(color: Colors. white)),
@@ -19,17 +20,18 @@ class InfoPage extends StatelessWidget {
     Row(
       children: [
         Expanded(
-          flex: 1,
+          flex: 2,
           child: Drawer(
-            child: SizedBox(
+            child: Container(
+              color: Colors.black26,
               width: MediaQuery.of(context).size.width * 1,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
                 children: [
                   SingleChildScrollView(
                     child: AspectRatio(aspectRatio: 1,
                     child: Container(
-                      color: Colors.black26,
                       child: Column(
                         children: [
                           Spacer(flex: 2),
@@ -109,7 +111,7 @@ class InfoPage extends StatelessWidget {
                           const Icon(FontAwesomeIcons.heart,color: Colors.blue,),
                           Text("Discover Me",
                           style: TextStyle(
-                          color: Colors.white.withOpacity(0.85),
+                          color: Colors.white,
                           fontSize: 15,
                           fontWeight: FontWeight.w600)),
                           const Icon(FontAwesomeIcons.heart,color: Colors.blue,)

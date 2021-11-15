@@ -5,8 +5,8 @@ import 'package:chewie/chewie.dart';
 
 
 
-class VideoPage extends StatelessWidget {
-  const VideoPage({Key? key}) : super(key: key);
+class Video_Page extends StatelessWidget {
+  const Video_Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

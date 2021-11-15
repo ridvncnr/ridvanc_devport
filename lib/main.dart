@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:ridvanc_devport/HomeScreen.dart';
-import 'InfoPage.dart';
-import 'VideoPage.dart';
+import 'package:ridvanc_devport/Home_Screen.dart';
+import 'package:ridvanc_devport/Info_Page.dart';
+import 'package:ridvanc_devport/Video_Page.dart';
+
 
 
 void main() {
@@ -20,9 +21,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       theme: ThemeData(fontFamily: 'Raleway'),
       routes: {
-        "/": (BuildContext context) => HomeScreen(),
-        "/info": (BuildContext context) =>  InfoPage(),
-        "/videos": (BuildContext context) => VideoPage(),
+        "/": (BuildContext context) => const Home_Screen(),
+        "/info": (BuildContext context) =>  Info_Page(),
+        "/videos": (BuildContext context) => const Video_Page(),
       },
     );
   }
